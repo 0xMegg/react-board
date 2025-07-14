@@ -14,43 +14,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
-import type { SerializedEditorState } from "lexical";
-import { Editor } from "@/components/blocks/editor-00";
-import { useState } from "react";
-
-const initialValue = {
-  root: {
-    children: [
-      {
-        children: [
-          {
-            detail: 0,
-            format: 0,
-            mode: "normal",
-            style: "",
-            text: "Hello World 🚀",
-            type: "text",
-            version: 1,
-          },
-        ],
-        direction: "ltr",
-        format: "",
-        indent: 0,
-        type: "paragraph",
-        version: 1,
-      },
-    ],
-    direction: "ltr",
-    format: "",
-    indent: 0,
-    type: "root",
-    version: 1,
-  },
-} as unknown as SerializedEditorState;
 
 function CreatePage() {
-  const [editorState, setEditorState] =
-    useState<SerializedEditorState>(initialValue);
   return (
     <div className="page">
       <AppHeader />
@@ -118,12 +83,7 @@ function CreatePage() {
               </div>
             </div>
           </div>
-          <div>
-            <Editor
-              editorSerializedState={editorState}
-              onSerializedChange={(value) => setEditorState(value)}
-            />
-          </div>
+          <div>ㅁㄴㅇㄹ</div>
         </div>
       </div>
       <AppFooter />
