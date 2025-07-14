@@ -4,6 +4,8 @@ import SideBar from "@/components/home/side-bar";
 import { Flame, PencilLine } from "lucide-react";
 import NewTopicCard from "@/components/home/card/new-topic";
 import HotTopicCard from "@/components/home/card/hot-topic";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -65,6 +67,11 @@ function HomePage() {
         </div>
       </div>
       <AppFooter />
+      <div className="fixed bottom-4">
+        <Button>
+          <Link to="/">토픽 작성하기</Link>
+        </Button>
+      </div>
     </div>
   );
 }

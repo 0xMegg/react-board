@@ -5,19 +5,21 @@ import { ThemeProvider } from "@/components/theme-provider";
 import HomePage from "./pages/Home";
 import SignInPage from "./pages/Sign-in";
 import SignUpPage from "./pages/Sign-up";
+import CreatePage from "./pages/Create";
 
 function App() {
-    return (
-        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/sign-in" element={<SignInPage />} />
-                    <Route path="/sign-up" element={<SignUpPage />} />
-                </Routes>
-            </BrowserRouter>
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/sign-in" element={<SignInPage />} />
+          <Route path="/sign-up" element={<SignUpPage />} />
+          <Route path="/create" element={<CreatePage />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
 
 export default App;

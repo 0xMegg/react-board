@@ -17,7 +17,7 @@ function HotTopicCard() {
               개발자도 브랜딩을 해야할까? 답은 YES! 개발자도 브랜딩을 해야할까?
               답은 YES!
             </p>
-            <Button variant="secondary">
+            <Button variant="secondary" size="icon">
               <MousePointerClick />
             </Button>
           </div>
