@@ -14,6 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
+import { TextEditor } from "@/components/ui/text-editor";
 
 function CreatePage() {
   return (
@@ -83,7 +84,13 @@ function CreatePage() {
               </div>
             </div>
           </div>
-          <div>ㅁㄴㅇㄹ</div>
+          {/* 텍스트 에디터 영역 */}
+          <div className="flex-1 ml-6">
+            <TextEditor
+              placeholder="토픽 내용을 작성해주세요..."
+              className="min-h-[500px]"
+            />
+          </div>
         </div>
       </div>
       <AppFooter />
