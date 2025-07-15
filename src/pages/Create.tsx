@@ -30,11 +30,11 @@ function CreatePage() {
         <div className="flex items-start">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
-              <Button size="icon">
+              <Button size="icon" variant="outline">
                 <ArrowLeft />
               </Button>
-              <Button>임시 저장</Button>
-              <Button>
+              <Button variant="outline">임시 저장</Button>
+              <Button variant="destructive">
                 <Rocket />
                 토픽 발행하기
               </Button>

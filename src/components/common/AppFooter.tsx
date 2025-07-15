@@ -15,7 +15,7 @@ function AppFooter() {
         <hr className="border-neutral-500" />
         <div className="flex items-center justify-between px-6 py-4 w-full">
           <div className="h-24 flex flex-col justify-between">
-            <img src="" alt="" className="w-10 h-10" />
+            <img src="" alt="" className="w-10 h-10 min-h-10" />
             <div className="flex flex-col gap-1">
               <div>
                 <div className="flex items-center gap-2">

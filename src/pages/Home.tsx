@@ -68,7 +68,7 @@ function HomePage() {
       </div>
       <AppFooter />
       <div className="fixed bottom-4">
-        <Button>
+        <Button className="py-6 px-12 bg-red-500 text-white opacity-70 rounded-full">
           <Link to="/">토픽 작성하기</Link>
         </Button>
       </div>
